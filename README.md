@@ -27,7 +27,8 @@ ___
 **Steps**:
 
 1. **Add a virtual disk**:
-   - Make sure your virtual operating system is in the state of `Powered Off` or shutdown before preceeding or it will cause problems.
+   - Make sure your virtual operating system is in the state of `Powered Off` or shutdown before preceeding or it will cause problems. ![state](images/shutdownstate.png)
+   - 
 
 
 
