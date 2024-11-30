@@ -16,10 +16,10 @@ A hands-on project to simulate and document IT administration and security tasks
 ___
 ### Environment-setup
 This homelab was built using virtualization tools and software to simulate a real-world IT environment.
-- **Virtualization**: Oracle VM VirtualBox -[Download](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
-- **Operating System(s)**:
-  - Ubuntu -[Download](https://ubuntu.com/download)
-  - Rocky Linux (RHEL) -[Download](https://rockylinux.org/download)
+- **Virtualization**: Oracle VM VirtualBox [Download](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
+- **Operating Systems**:
+  - Ubuntu [Download](https://ubuntu.com/download)
+  - Rocky Linux (RHEL) [Download](https://rockylinux.org/download)
 ___
 ### Mounting a volume
 **Objective**: Add, format, and mount a new virtual disk in Linux systems. 
