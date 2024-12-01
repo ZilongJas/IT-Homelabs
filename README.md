@@ -49,11 +49,40 @@ ___
 
      ![image](images/add_success.png)
 
-   - temp
+   - Now start your virtual machine, go to your terminal and start `parted`
+  
+     ```bash
+     sudo parted
+     ```
+
+   - It will display what hard drive you are currently using so don't accidentally erase your entire drive!
+     - Example output:
+       
+     ```bash
+      NU Parted 3.6
+      Using /dev/sda  # This is the drive you are CURRENTLY using, do not select this. 
+      Welcome to GNU Parted! Type 'help' to view a list of commands.
+      (parted)
+     ```
+
+   - Show all of your available devices
      
+     ```bash
+     print devices
+     ```
+     
+     - Example output:
+       
+      ```bash
+      /dev/sda (107GB)
+      /dev/sdb (68.7GB) # Note that the 64GB we added on our VM is in GiB, so in parted it will appear larger in number, but they are the same size, both uses different measurements.
+      ```
 
+   - Create a new partition on the new disk that we added. In this case it is `/dev/sdb`.
 
-
+     ```bash
+     select /dev/sdb 
+     ```
 
 
 
