@@ -3,6 +3,7 @@ A hands-on project to simulate and document IT administration and security tasks
 
 ## Table of Contents
 - [Environment Setup](#environment-setup)
+  - [Setting up Disk Partitions](#setting-up-disk-partitions)
   - [Mounting a Volume](#mounting-a-volume)
   - [Incident Response Simulation](#incident-response-simulation)
   - [Operating System Patching](#operating-system-patching)
@@ -21,7 +22,7 @@ This homelab was built using virtualization tools and software to simulate a rea
   - Ubuntu [Download](https://ubuntu.com/download)
   - Rocky Linux (RHEL) [Download](https://rockylinux.org/download)
 ___
-### Mounting a volume
+### Setting up disk partitions
 **Objective**: Add, format, and mount a new virtual disk in Linux systems. 
 
 **Steps**:
@@ -118,6 +119,14 @@ ___
     ```bash
     name 1 backups
     ```
+___
+### Mounting a volume
+
+
+
+
+
+
 
 ___
 ### References
