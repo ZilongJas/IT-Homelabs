@@ -78,13 +78,51 @@ ___
       /dev/sdb (68.7GB) # Note that the 64GB we added on our VM is in GiB, so in parted it will appear larger in number, but they are the same size, both uses different measurements.
       ```
 
-   - Create a new partition on the new disk that we added. In this case it is `/dev/sdb`.
+   - Select the new disk that we added. In this case it is `/dev/sdb`.
 
      ```bash
      select /dev/sdb 
      ```
 
+   - Now, we want to create a partition table on our new disk. We are basically choosing a structure that our disk will use to store data. (It will remove all data on disk).
+  
+     ```bash
+     mklabel 
+     ```
+  
+   - It will ask for a lable type, for modern systems we will be typing in `gpt`. In older systems we would use `msdos`. If your disk has data it will ask you to type `Yes` to destroy all data in order to continue.
 
+     ```bash
+     gpt
+     ````
+  
+  - After our partition table is created, we will make a new partition. Basically meaning we are choosing when the partition starts and ends and its type. It will start at 1MiB to ensure the disk works correctly with metadata. Note that ending in 64GiB will not work because 64GiB != 68.7GB. 
+    
+    `mkpart PART-TYPE [FS-TYPE] START END`
+
+    ```bash
+    mkpart primary ext4 1MiB 68.7GB
+    ```
+  - Double check if everything is set
+
+    ```bash
+    print partitions
+    ```
+    - Example output:
+    
+          Number  Start   End     Size    File system  Name     Flags
+          1      1049kB  68.7GB   68.7GB  ext4         primary
+
+  - You can name your disk as well, here we are naming our new disk as `backups`. If you have exited parted make sure to select the disk you want to name again. We can also use parted within our terminal but I don't recommened it as it might require more parameters.
+    
+    ```bash
+    name 1 backups
+    ```
+
+___
+### References
+
+[Redhat Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/disk-partitions_managing-storage-devices?utm_source=chatgpt.com#guid-partition-table_disk-partitions)
 
 
 
