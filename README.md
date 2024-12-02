@@ -141,11 +141,12 @@ ___
 
   Now we confirm that the drive we need to mount is sdb1, which is in this path `/dev/sdb1`
   
-- If the drive is blank you need to format the drive using
+- If the drive is blank you need to format the drive using:
+  
   ```bash
   sudo mkfs.ext4 /dev/sdb1
   ```
-
+- There are many other types of file systems, please check [References](#references)
 - Then, let's create a folder and mount this drive into that folder.
   ```bash
   sudo mkdir /mnt/backups && sudo mount /dev/sdb1 /mnt/backups
@@ -201,6 +202,7 @@ ___
 
 [Redhat Documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/disk-partitions_managing-storage-devices?utm_source=chatgpt.com#guid-partition-table_disk-partitions)
 
+[File Systems](https://en.wikipedia.org/wiki/List_of_file_systems)
 
 
 
