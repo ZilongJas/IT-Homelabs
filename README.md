@@ -5,6 +5,7 @@ A hands-on project to simulate and document IT administration and security tasks
 - [Environment Setup](#environment-setup)
   - [Setting up Disk Partitions](#setting-up-disk-partitions)
   - [Mounting a Volume](#mounting-a-volume)
+  - [Mounting a Dynamic Volume](#mounting-a-dynamic-volume)
   - [Incident Response Simulation](#incident-response-simulation)
   - [Operating System Patching](#operating-system-patching)
   - [Deploying Nessus and Splunk](#deploying-nessus-and-splunk)
@@ -122,7 +123,7 @@ ___
 ___
 ### Mounting a volume
 
-**Objectives:**
+**Objectives:** Mount a volume for single disk (Personal use where there is no need to resize or having snapshots)
 
 **Steps:**
 
@@ -172,6 +173,27 @@ ___
     - `noexec` disables execution perms
     - `nosuid` disables set-user-identifier and set-group-identifier
     - `noatime` do not update access time when file is read
+
+### Mount a dynamic volume
+
+**Objectives**: Mount a dynamic volume where resizing and snapshots are needed
+
+**Steps**:
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ___
