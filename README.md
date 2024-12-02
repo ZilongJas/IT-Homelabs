@@ -50,7 +50,7 @@ ___
 
      ![image](images/add_success.png)
 
-   - Now start your virtual machine, go to your terminal and start `parted`
+2. - Now start your virtual machine, go to your terminal and start `parted`
   
      ```bash
      sudo parted
@@ -122,10 +122,58 @@ ___
 ___
 ### Mounting a volume
 
+**Objectives:**
 
+**Steps:**
 
+- Get the name of the drive first
+  
+  ```bash
+  lsblk -f
+  ```
+  Example output:
+  
+  ```
+  sdb                 
+  └─sdb1
+  ```
 
+  Now we confirm that the drive we need to mount is sdb1, which is in this path `/dev/sdb1`
+  
+- If the drive is blank you need to format the drive using
+  ```bash
+  sudo mkfs.ext4 /dev/sdb1
+  ```
 
+- Then, let's create a folder and mount this drive into that folder.
+  ```bash
+  sudo mkdir /mnt/backups && sudo mount /dev/sdb1 /mnt/backups
+  ```
+- Verify the mount
+  ```bash
+  df -h
+  ```
+- unmount if needed
+  ```bash
+  sudo umount /dev/sdb1
+  ```
+  or
+  ```bash
+  sudo umount /mnt/backups
+  ```
+  AND you're done!
+
+  - For advanced mounting options:
+ 
+  ```bash
+  mount -o [options] [device] [mountfolder]
+  ```
+  
+    - `ro` read only
+    - `rw` (default) read + write
+    - `noexec` disables execution perms
+    - `nosuid` disables set-user-identifier and set-group-identifier
+    - `noatime` do not update access time when file is read
 
 
 ___
