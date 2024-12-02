@@ -165,9 +165,7 @@ ___
 
   - For advanced mounting options:
  
-  ```bash
-  mount -o [options] [device] [mountfolder]
-  ```
+  `mount -o [options] [device] [mountfolder]`
   
     - `ro` read only
     - `rw` (default) read + write
