@@ -14,7 +14,8 @@ ___
 ### Environment-setup:
 This homelab was built using virtualization tools and software to simulate a real-world IT environment.
 
-- **Virtualization**: Oracle VM VirtualBox
+- **Virtualization**:
+  -  Oracle VM VirtualBox
 
   
 - **Operating Systems**:
