@@ -171,12 +171,14 @@ ___
   - For advanced mounting options:
  
   `mount -o [options] [device] [mountfolder]`
+
   
     - `ro` read only
     - `rw` (default) read + write
     - `noexec` disables execution perms
     - `nosuid` disables set-user-identifier and set-group-identifier
     - `noatime` do not update access time when file is read
+
 
 - Now, if we reboot our system, our mount is gone! So let's make it work permanently using `/etc/fstab`. It will automatically mount during boot.
 - Note that, our data in the mounted file is not lost if we did not do this step, we just need to re-mount it again to access the files, but let's make it automatic:
