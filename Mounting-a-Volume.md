@@ -1,6 +1,6 @@
 ### Mounting a volume
 
-**Objectives:** Mount a volume for single disk (Personal use where there is no need to resize or having snapshots)
+**Objectives:** Mount a volume (Both singularly and dynamically)
 
 **Steps:**
 
