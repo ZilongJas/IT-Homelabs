@@ -11,7 +11,7 @@ A hands-on project to simulate and document IT administration and security tasks
 ___
 
 
-### Environment-setup:
+### Setup:
 This homelab was built using virtualization tools and software to simulate a real-world IT environment.
 
 - **Virtualization**:
