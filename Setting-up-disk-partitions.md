@@ -96,4 +96,4 @@
     name 1 backups
     ```
 
-    [Back](README.md)
+[Back](README.md)   [Top](Setting-up-disk-partitions.md)
