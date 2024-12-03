@@ -1,4 +1,5 @@
-## Overview: A hands-on project to simulate and document IT administration and security tasks in a homelab environment.
+## Overview:
+A hands-on project to simulate and document IT administration and security tasks in a homelab environment.
 
 ## Table of Contents
 
@@ -10,7 +11,8 @@
 ___
 
 
-### Environment-setup: This homelab was built using virtualization tools and software to simulate a real-world IT environment.
+### Environment-setup:
+This homelab was built using virtualization tools and software to simulate a real-world IT environment.
 
 - **Virtualization**: Oracle VM VirtualBox
 
