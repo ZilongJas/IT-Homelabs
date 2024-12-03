@@ -22,7 +22,9 @@ This homelab was built using virtualization tools and software to simulate a rea
 - **Operating Systems**:
   - Ubuntu [Download](https://ubuntu.com/download)
   - Rocky Linux (RHEL) [Download](https://rockylinux.org/download)
+    
 ___
+
 ### Setting up disk partitions
 **Objective**: Add, format, and mount a new virtual disk in Linux systems. 
 
