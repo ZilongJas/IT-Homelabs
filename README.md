@@ -4,7 +4,7 @@ A hands-on project to simulate and document IT administration and security tasks
 ## Table of Contents
 
   - [Setting up Disk Partitions](Setting-up-disk-partitions.md)
-  - [Mounting a Volume](Mounting-a-volume)
+  - [Mounting a Volume](Mounting-a-Volume.md)
 
 ___
 
