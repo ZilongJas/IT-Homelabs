@@ -2,12 +2,12 @@
 A hands-on project to simulate and document IT administration and security tasks in a homelab environment.
 
 ## Table of Contents
-- [Environment Setup](#environment-setup)
-  - [Setting up Disk Partitions](#setting-up-disk-partitions)
-  - [Mounting a Volume](#mounting-a-volume)
+- [Environment Setup](environment-setup)
+  - [Setting up Disk Partitions](Setting-up-disk-partitions.md)
+  - [Mounting a Volume](Mounting-a-volume)
   - [Mounting a Dynamic Volume](#mounting-a-dynamic-volume)
   - [Incident Response Simulation](#incident-response-simulation)
-  - [Operating System Patching](#operating-system-patching)
+  - [Operating System Patching](operating-system-patching)
   - [Deploying Nessus and Splunk](#deploying-nessus-and-splunk)
   - [Network Traffic Analysis](#network-traffic-analysis)
   - [Automation with Ansible](#automation-with-ansible)
