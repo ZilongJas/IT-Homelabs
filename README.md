@@ -1,5 +1,5 @@
 ## Overview:
-A hands-on project to simulate and document IT administration and security tasks in a homelab environment.
+Hands on projects to simulate and document system administration and network management in a homelab environment.
 
 ## Table of Contents
 
@@ -11,16 +11,10 @@ A hands-on project to simulate and document IT administration and security tasks
 ___
 
 
-### Setup:
-This homelab was built using virtualization tools and software to simulate a real-world IT environment.
+### Getting Started
 
-- **Virtualization**:
-  -  Oracle VM VirtualBox
+Necessary tools:
 
-  
-- **Operating Systems**:
-  
-  - Ubuntu 
-  - Rocky Linux (RHEL) 
- 
-[Download VM](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)  |  [Download Ubuntu](https://ubuntu.com/download)  |  [Download Rocky](https://rockylinux.org/download)
+- [Download VM VirtualBox](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
+- [Download Ubuntu](https://ubuntu.com/download)
+- [Download Rocky Linux](https://rockylinux.org/download)
