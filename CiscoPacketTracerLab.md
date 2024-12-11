@@ -12,3 +12,5 @@
 
 - Host A goes through the first switch and sends its destination MAC address to the router, not host B's mac address
 - Router ignores the mac address but sees the destination IP and goes through the second switch, then finally host B.
+
+1. Try to mimick the first diagram using packet tracer
