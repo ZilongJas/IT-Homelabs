@@ -6,7 +6,8 @@ Hands on projects to simulate and document system administration and network man
   - [Setting up Disk Partitions](Setting-up-disk-partitions.md)
     
   - [Mounting a Volume](Mounting-a-Volume.md)
-
+    
+  - [Cisco Packet Tracer](CiscoPacketTracerLab.md)
 
 ___
 
@@ -18,3 +19,4 @@ Necessary tools:
 - [Download VM VirtualBox](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
 - [Download Ubuntu](https://ubuntu.com/download)
 - [Download Rocky Linux](https://rockylinux.org/download)
+- [Download Packet Tracer](https://www.netacad.com/resources/lab-downloads?courseLang=en-US)
