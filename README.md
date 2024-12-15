@@ -9,10 +9,7 @@ Hands on projects to simulate and document system administration and network man
 
 ___
 
-
-### Getting Started
-
-Necessary tools:
+Tools used:
 
 - [Download VM VirtualBox](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
 - [Download Ubuntu](https://ubuntu.com/download)
