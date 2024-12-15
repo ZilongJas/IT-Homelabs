@@ -7,24 +7,24 @@
    - Make sure your virtual machine is ran at least once and set up before moving on.
    - Make sure your virtual machine is in the state of `Powered Off` or shutdown before preceeding or it will cause problems.
   
-     ![state](images/shutdownstate.png)
+     ![state](../images/shutdownstate.png)
 
    - Click on `Settings` of the virtual machine.
    - Go to `Storage` and click the small icon under your selected controller to add a new virtual disk.
 
-     ![adddisk](images/storage_SS.png)
+     ![adddisk](../images/storage_SS.png)
 
    - Highlight your selected virtual machine and click `Create`, at the bottom click on `Expert Mode` if you are in `Guided Mode`.
 
-     ![create](images/create.png)
+     ![create](../images/create.png)
 
    - Let's create a virtual disk of 64GB. Imagine we are connecting a new hard drive of 64GB to the machine.
   
-     ![image](images/diskcreation.png)
+     ![image](../images/diskcreation.png)
 
    - Click `Finish` and select the unattached hard disk we just created then click `Choose`, we should see that it is added on to the virtual machine successfully.
 
-     ![image](images/add_success.png)
+     ![image](../images/add_success.png)
 
 2. - Now start your virtual machine, go to your terminal and start `parted`
   
@@ -95,5 +95,3 @@
     ```bash
     name 1 backups
     ```
-
-[Back](README.md)   [Top](Setting-up-disk-partitions.md)
