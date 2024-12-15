@@ -1,13 +1,3 @@
-# Cisco Packet Tracer Labs | [Download Packet Tracer](https://www.netacad.com/resources/lab-downloads?courseLang=en-US) or see [Video For Ubuntu](https://www.youtube.com/watch?v=kg5CalaPOLA)
-*NOTE: You need to make an account and stay logged in to download Cisco's Packet Tracer* 
-
-### Table of Contents:
-- [Routing Setup](#routing-setup)
-
-
-
-___
-
 # Routing Setup
 *This will be the diagrams we will refer to*
 
