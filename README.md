@@ -6,14 +6,21 @@
 
 ___
 
+
+Tools used:
+      - [Oracle VirtualBox](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
+      - [Ubuntu](https://ubuntu.com/download)
+      - [Rocky Linux](https://rockylinux.org/download)
+      - [Packet Tracer](https://www.netacad.com/resources/lab-downloads?courseLang=en-US)
+
+___
+
 ## Security 
   - test
 
 ___
 
 Tools used:
+      - test
 
-- [Download VM VirtualBox](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
-- [Download Ubuntu](https://ubuntu.com/download)
-- [Download Rocky Linux](https://rockylinux.org/download)
-- [Download Packet Tracer](https://www.netacad.com/resources/lab-downloads?courseLang=en-US)
+___
