@@ -1,26 +1,26 @@
-## System Adminstration and Networking
+## System Adminstration
 
   - [Linux System Adminstration Homelab](Linux/Linux.md)
-    
-  - [Cisco Packet Tracer](PacketTracer/PacketTracer.md)
-
-___
-
 
 Tools used:
       - [Oracle VirtualBox](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
       - [Ubuntu](https://ubuntu.com/download)
       - [Rocky Linux](https://rockylinux.org/download)
+
+___
+
+## Networking 
+  - [Cisco Packet Tracer](PacketTracer/PacketTracer.md)
+
+
+Tools used:
       - [Packet Tracer](https://www.netacad.com/resources/lab-downloads?courseLang=en-US)
 
 ___
 
-## Security 
+## Security
   - test
 
-___
 
 Tools used:
       - test
-
-___
