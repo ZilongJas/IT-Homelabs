@@ -3,11 +3,9 @@ Hands on projects to simulate and document system administration and network man
 
 ## Table of Contents
 
-  - [Setting up Disk Partitions](Setting-up-disk-partitions.md)
+  - [Linux System Adminstration Homelab](LSA.md)
     
-  - [Mounting a Volume](Mounting-a-Volume.md)
-    
-  - [Cisco Packet Tracer](CiscoPacketTracerLab.md)
+  - [Cisco Packet Tracer](CPT.md)
 
 ___
 
