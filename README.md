@@ -3,9 +3,9 @@ Hands on projects to simulate and document system administration and network man
 
 ## Table of Contents
 
-  - [Linux System Adminstration Homelab](LSA.md)
+  - [Linux System Adminstration Homelab](LSA/LSA.md)
     
-  - [Cisco Packet Tracer](CPT.md)
+  - [Cisco Packet Tracer](CPT/CPT.md)
 
 ___
 
