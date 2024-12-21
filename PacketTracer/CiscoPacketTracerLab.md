@@ -37,3 +37,29 @@ Refer to the following diagram for visual representation:
 
 ---
 
+## Configuring PCs
+
+Configure PCs within the network to ensure seamless communication and functionality. Refer the diagram for the IP addresses.
+
+1. Click on PC1.
+2. Open the **Config** tab.
+3. Choose **FastEthernet0** from the interface list.
+4. Enter the **IPv4** Address (192.168.10.10). Subnet Mask will automatically be assigned.
+5. Choose **Settings** from the global list.
+6. Enter the **Default Gateway** (192.168.10.1).
+7. Repeat steps 1-6 for PC2. Ensure the **Default Gateway** is updated to reflect the correct address for PC2. 
+
+## Configuring Routers
+
+
+
+
+
+
+
+
+
+
+
+
+
