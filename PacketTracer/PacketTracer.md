@@ -1,3 +1,3 @@
 # Cisco Packet Tracer Labs 
 
-- [Simple Rounting Setups](CiscoPacketTracerLab.md)
+- [Rounting Setups](CiscoPacketTracerLab.md)
