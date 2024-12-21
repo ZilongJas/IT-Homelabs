@@ -1,97 +1,112 @@
-### Setting up disk partitions
-**Objective**: Add, format, and mount a new virtual disk in Linux systems. 
+# Setting Up Disk Partitions in Linux
 
-**Steps**:
+## Objective
+This document outlines the process of adding, formatting, and mounting a new virtual disk in Linux systems, demonstrating proficiency in system configuration and disk management.
 
-1. **Add a virtual disk**:
-   - Make sure your virtual machine is ran at least once and set up before moving on.
-   - Make sure your virtual machine is in the state of `Powered Off` or shutdown before preceeding or it will cause problems.
-  
-     ![state](../images/shutdownstate.png)
+---
 
-   - Click on `Settings` of the virtual machine.
-   - Go to `Storage` and click the small icon under your selected controller to add a new virtual disk.
+## Steps
 
-     ![adddisk](../images/storage_SS.png)
+### 1. Adding a Virtual Disk
 
-   - Highlight your selected virtual machine and click `Create`, at the bottom click on `Expert Mode` if you are in `Guided Mode`.
+1. Verify that the virtual machine has been run at least once and is in a powered-off state before proceeding.
+   - **Note**: Attempting this process while the VM is running may result in errors or unexpected behavior.
 
-     ![create](../images/create.png)
+   ![Shutdown State](../images/shutdownstate.png)
 
-   - Let's create a virtual disk of 64GB. Imagine we are connecting a new hard drive of 64GB to the machine.
-  
-     ![image](../images/diskcreation.png)
+2. Access the `Settings` menu of the virtual machine.
+3. Navigate to `Storage` and select the small icon under the chosen controller to add a new virtual disk.
 
-   - Click `Finish` and select the unattached hard disk we just created then click `Choose`, we should see that it is added on to the virtual machine successfully.
+   ![Add Disk](../images/storage_SS.png)
 
-     ![image](../images/add_success.png)
+4. Highlight the virtual machine and click `Create`. Select `Expert Mode` if `Guided Mode` is active.
 
-2. - Now start your virtual machine, go to your terminal and start `parted`
-  
-     ```bash
-     sudo parted
-     ```
+   ![Create Disk](../images/create.png)
 
-   - It will display what hard drive you are currently using so don't accidentally erase your entire drive!
-     - Example output:
-       
-     ```bash
-      NU Parted 3.6
-      Using /dev/sda  # This is the drive you are CURRENTLY using, do not select this. 
-      Welcome to GNU Parted! Type 'help' to view a list of commands.
-      (parted)
-     ```
+5. Define a virtual disk size of **64GB** to simulate adding a new hard drive.
 
-   - Show all of your available devices
-     
-     ```bash
-     print devices
-     ```
-     
-     - Example output:
-       
-      ```bash
-      /dev/sda (107GB)
-      /dev/sdb (68.7GB) # Note that the 64GB we added on our VM is in GiB, so in parted it will appear larger in number, but they are the same size, both uses different measurements.
-      ```
+   ![Disk Creation](../images/diskcreation.png)
 
-   - Select the new disk that we added. In this case it is `/dev/sdb`.
+6. Finalize by clicking `Finish`, attach the newly created disk, and confirm it is successfully added to the virtual machine.
 
-     ```bash
-     select /dev/sdb 
-     ```
+   ![Add Success](../images/add_success.png)
 
-   - Now, we want to create a partition table on our new disk. We are basically choosing a structure that our disk will use to store data. (It will remove all data on disk).
-  
-     ```bash
-     mklabel 
-     ```
-  
-   - It will ask for a lable type, for modern systems we will be typing in `gpt`. In older systems we would use `msdos`. If your disk has data it will ask you to type `Yes` to destroy all data in order to continue.
+---
 
-     ```bash
-     gpt
-     ````
-  
-  - After our partition table is created, we will make a new partition. Basically meaning we are choosing when the partition starts and ends and its type. It will start at 1MiB to ensure the disk works correctly with metadata. Note that ending in 64GiB will not work because 64GiB != 68.7GB. 
-    
-    `mkpart PART-TYPE [FS-TYPE] START END`
+### 2. Formatting and Partitioning the Disk
 
-    ```bash
-    mkpart primary ext4 1MiB 68.7GB
-    ```
-  - Double check if everything is set
+1. Start the virtual machine and open a terminal.
 
-    ```bash
-    print partitions
-    ```
-    - Example output:
-    
-          Number  Start   End     Size    File system  Name     Flags
-          1      1049kB  68.7GB   68.7GB  ext4         primary
+   ```bash
+   sudo parted
+   ```
 
-  - You can name your disk as well, here we are naming our new disk as `backups`. If you have exited parted make sure to select the disk you want to name again. We can also use parted within our terminal but I don't recommened it as it might require more parameters.
-    
-    ```bash
-    name 1 backups
-    ```
+2. Identify the current hard drive in use, avoiding any modifications to it. Example:
+
+   ```bash
+   GNU Parted 3.6
+   Using /dev/sda  # This is the active drive. Do not modify it.
+   Welcome to GNU Parted! Type 'help' to view a list of commands.
+   (parted)
+   ```
+
+3. List all available devices:
+
+   ```bash
+   print devices
+   ```
+
+   Example output:
+   ```bash
+   /dev/sda (107GB)
+   /dev/sdb (68.7GB)  # Note: The 64GB disk appears as 68.7GB due to measurement differences.
+   ```
+
+4. Select the newly added disk (e.g., `/dev/sdb`):
+
+   ```bash
+   select /dev/sdb
+   ```
+
+5. Create a partition table, which will structure the disk for data storage (this step erases all existing data on the disk):
+
+   ```bash
+   mklabel
+   ```
+
+6. When prompted, specify the label type as `gpt` for modern systems or `msdos` for older systems. Confirm any warnings about data loss.
+
+   ```bash
+   gpt
+   ```
+
+7. Create a primary partition starting at 1MiB and ending at the disk's maximum capacity:
+
+   ```bash
+   mkpart primary ext4 1MiB 68.7GB
+   ```
+
+8. Validate the partition details:
+
+   ```bash
+   print partitions
+   ```
+
+   Example output:
+   ```
+   Number  Start   End     Size    File system  Name     Flags
+   1      1049kB  68.7GB  68.7GB  ext4         primary
+   ```
+
+9. Optionally, assign a name to the partition (e.g., `backups`):
+
+   ```bash
+   name 1 backups
+   ```
+
+---
+
+## Notes
+- Exercise caution during disk partitioning to prevent unintended data loss.
+- Always verify that operations target the intended disk to avoid modifying the primary system drive.
+- This process is designed for Linux environments and uses the `parted` utility for disk management.
