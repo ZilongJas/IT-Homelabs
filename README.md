@@ -19,11 +19,11 @@ ___
 ## Networking (Packet Tracer, Wireshark...) 
   - ## [Simple Network Simulation Using Packet Tracer](PacketTracer/PacketTracer.md)
     - This homelab showcases my expertise in configuring and managing network routers and protocols within a simulated environment. 
-      - **Router Configuration**: Set up physical connections and configuring routers for optimal network performance.  
-      - **Static Routing**: Implement static routes to ensure direct communication between networks.  
-      - **RIP**: Set up and manage RIP for basic dynamic routing.  
-      - **OSPF**: Configure OSPF for scalable and efficient dynamic routing.  
-      - **EIGRP**: Implement EIGRP for advanced and optimized routing within complex networks.
+      - **Router Configuration**: Setting up physical connections and configuring routers for optimal network performance.  
+      - **Static Routing**: Implementing static routes to ensure direct communication between networks.  
+      - **RIP**: Setting up and managing RIP for basic dynamic routing.  
+      - **OSPF**: Configuring OSPF for scalable and efficient dynamic routing.  
+      - **EIGRP**: Implementing EIGRP for advanced and optimized routing within complex networks.
 
 
 ___
