@@ -1,7 +1,7 @@
 # Setting Up Disk Partitions in Linux
 
 ## Objective
-This document outlines the process of adding, formatting, and mounting a new virtual disk in Linux systems, demonstrating proficiency in system configuration and disk management.
+This document outlines the process of adding, formatting, and mounting a new virtual disk in Linux systems.
 
 ---
 
@@ -103,10 +103,3 @@ This document outlines the process of adding, formatting, and mounting a new vir
    ```bash
    name 1 backups
    ```
-
----
-
-## Notes
-- Exercise caution during disk partitioning to prevent unintended data loss.
-- Always verify that operations target the intended disk to avoid modifying the primary system drive.
-- This process is designed for Linux environments and uses the `parted` utility for disk management.
