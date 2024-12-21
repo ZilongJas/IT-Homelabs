@@ -1,6 +1,6 @@
 # Network Setup Documentation
 
-This repository contains detailed documentation for configuring and managing network routers and protocols in a professional environment.
+Configuring and managing network routers and protocols in a professional environment.
 
 ## Contents
 
