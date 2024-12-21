@@ -3,9 +3,9 @@
   - [Linux System Adminstration Homelab](Linux/Linux.md)
 
 Tools used:
-      - [Oracle VirtualBox](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
-      - [Ubuntu](https://ubuntu.com/download)
-      - [Rocky Linux](https://rockylinux.org/download)
+      - Oracle VirtualBox
+      - Ubuntu
+      - Rocky Linux
 
 ___
 
@@ -14,7 +14,7 @@ ___
 
 
 Tools used:
-      - [Packet Tracer](https://www.netacad.com/resources/lab-downloads?courseLang=en-US)
+      - Packet Tracer, CLI
 
 ___
 
