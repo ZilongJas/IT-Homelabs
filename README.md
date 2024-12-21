@@ -10,7 +10,7 @@ Tools used:
 ___
 
 ## Cisco Packet Tracer 
-  - [Network Setup](PacketTracer/PacketTracer.md)
+  - [Network Simulation](PacketTracer/PacketTracer.md)
 
 
 Tools used:
