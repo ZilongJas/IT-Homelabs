@@ -1,7 +1,7 @@
 # Setting Up Disk Partitions in Linux
 
 ## Objective
-This document outlines the process of adding, formatting, and mounting a new virtual disk in Linux systems.
+This document provides a procedural reference for adding, formatting, and mounting a new virtual disk in Linux systems.
 
 ---
 
@@ -9,7 +9,7 @@ This document outlines the process of adding, formatting, and mounting a new vir
 
 ### 1. Adding a Virtual Disk
 
-1. Verify that the virtual machine has been run at least once and is in a powered-off state before proceeding.
+1. Ensure the virtual machine has been run at least once and is in a powered-off state before proceeding.
    - **Note**: Attempting this process while the VM is running may result in errors or unexpected behavior.
 
    ![Shutdown State](../images/shutdownstate.png)
@@ -41,7 +41,7 @@ This document outlines the process of adding, formatting, and mounting a new vir
    sudo parted
    ```
 
-2. Identify the current hard drive in use, avoiding any modifications to it. Example:
+2. Identify the current hard drive in use and avoid making changes to it. Example:
 
    ```bash
    GNU Parted 3.6
@@ -68,13 +68,13 @@ This document outlines the process of adding, formatting, and mounting a new vir
    select /dev/sdb
    ```
 
-5. Create a partition table, which will structure the disk for data storage (this step erases all existing data on the disk):
+5. Create a partition table to structure the disk for data storage. This action erases all existing data on the disk:
 
    ```bash
    mklabel
    ```
 
-6. When prompted, specify the label type as `gpt` for modern systems or `msdos` for older systems. Confirm any warnings about data loss.
+6. When prompted, specify the label type (`gpt` for modern systems or `msdos` for older systems). Confirm any warnings about data loss.
 
    ```bash
    gpt
