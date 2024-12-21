@@ -1,68 +1,70 @@
-### Mounting a Volume
+# Mounting a Volume in Linux
 
-#### Objective
-Mount a volume both temporarily and persistently.
+## Steps
 
-#### Steps
-
-1. Identify the drive to be mounted:
+1. **Identify the Drive**:  
+   List available block devices to find the drive to be mounted:
 
    ```bash
    lsblk -f
    ```
 
-   Example output:
+   Example output:  
    ```
    sdb                 
    └─sdb1
    ```
-   Confirm that the drive to be mounted is `sdb1` located at `/dev/sdb1`.
+   Locate the desired partition, such as `/dev/sdb1`.
 
-2. Format the drive if it is blank:
+2. **Format the Drive**:  
+   If the drive is blank, format it with the ext4 file system:
 
    ```bash
    sudo mkfs.ext4 /dev/sdb1
    ```
 
-   - **Note**: Other file system options are available. Refer to the documentation for alternatives.
+   - **Note**: Replace `ext4` with the desired file system if needed.
 
-3. Create a mount point and mount the drive:
+3. **Create and Mount**:  
+   Create a mount point and mount the drive:
 
    ```bash
    sudo mkdir /mnt/backups && sudo mount /dev/sdb1 /mnt/backups
    ```
 
-4. Verify the mount:
+4. **Verify the Mount**:  
+   Check if the drive is mounted correctly:
 
    ```bash
    df -h
    ```
 
-5. Unmount the drive if needed:
+5. **Unmount the Drive (Optional)**:  
+   Unmount the drive when needed:
 
    ```bash
    sudo umount /dev/sdb1
    ```
 
-   or
+   Alternative:
 
    ```bash
    sudo umount /mnt/backups
    ```
 
-6. For advanced mounting options, use:
+6. **Advanced Mount Options**:  
+   Use additional options with the `mount` command if required:
 
    ```bash
    mount -o [options] [device] [mountfolder]
    ```
 
-   Common options include:
-   - `ro`: Read-only
-   - `rw`: (default) Read and write
-   - `noexec`: Disable execution permissions
-   - `nosuid`: Disable set-user-identifier and set-group-identifier
-   - `noatime`: Do not update access time when a file is read
+   Common options include:  
+   - `ro`: Read-only  
+   - `rw`: Read and write (default)  
+   - `noexec`: Disable execution permissions  
+   - `nosuid`: Disable set-user/group ID bits  
+   - `noatime`: Prevent updating access times
 
-7. To make the mount persistent across reboots, edit `/etc/fstab`. This ensures the volume is automatically mounted during system boot:
-
-   - **Note**: Data in the mounted folder is not lost if this step is skipped; however, manual re-mounting will be required after each reboot.
+7. **Make Persistent**:  
+   To retain the mount after a reboot, add an entry to `/etc/fstab`. Example:
