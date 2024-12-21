@@ -17,7 +17,7 @@
 ___
 
 ## Networking (Packet Tracer, Wireshark...) 
-  - ## [Network Simulation Using Packet Tracer](PacketTracer/PacketTracer.md)
+  - ## [Simple Network Simulation Using Packet Tracer](PacketTracer/PacketTracer.md)
     - This homelab showcases my expertise in configuring and managing network routers and protocols within a simulated environment. 
       - **Router Configuration**: Set up physical connections and configuring routers for optimal network performance.  
       - **Static Routing**: Implement static routes to ensure direct communication between networks.  
