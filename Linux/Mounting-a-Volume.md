@@ -1,61 +1,68 @@
-### Mounting a volume
+### Mounting a Volume
 
-**Objectives:** Mount a volume (Both singularly and dynamically)
+#### Objective
+Mount a volume both temporarily and persistently.
 
-**Steps:**
+#### Steps
 
-- Get the name of the drive first
-  
-  ```bash
-  lsblk -f
-  ```
-  Example output:
-  
-  ```
-  sdb                 
-  └─sdb1
-  ```
+1. Identify the drive to be mounted:
 
-  Now we confirm that the drive we need to mount is sdb1, which is in this path `/dev/sdb1`
-  
-- If the drive is blank you need to format the drive using:
-  
-  ```bash
-  sudo mkfs.ext4 /dev/sdb1
-  ```
-- There are many other types of file systems, please check [References](#references)
-- Then, let's create a folder and mount this drive into that folder.
-  ```bash
-  sudo mkdir /mnt/backups && sudo mount /dev/sdb1 /mnt/backups
-  ```
-- Verify the mount
-  ```bash
-  df -h
-  ```
-- unmount if needed
-  ```bash
-  sudo umount /dev/sdb1
-  ```
-  or
-  ```bash
-  sudo umount /mnt/backups
-  ```
+   ```bash
+   lsblk -f
+   ```
 
-  - For advanced mounting options:
- 
-  `mount -o [options] [device] [mountfolder]`
+   Example output:
+   ```
+   sdb                 
+   └─sdb1
+   ```
+   Confirm that the drive to be mounted is `sdb1` located at `/dev/sdb1`.
 
-  
-    - `ro` read only
-    - `rw` (default) read + write
-    - `noexec` disables execution perms
-    - `nosuid` disables set-user-identifier and set-group-identifier
-    - `noatime` do not update access time when file is read
+2. Format the drive if it is blank:
 
+   ```bash
+   sudo mkfs.ext4 /dev/sdb1
+   ```
 
-- Now, if we reboot our system, our mount is gone! So let's make it work permanently using `/etc/fstab`. It will automatically mount during boot.
-- Note that, our data in the mounted file is not lost if we did not do this step, we just need to re-mount it again to access the files, but let's make it automatic:
+   - **Note**: Other file system options are available. Refer to the documentation for alternatives.
 
--
+3. Create a mount point and mount the drive:
 
-[Back](README.md)  [Top](Mounting-a-Volume.md)
+   ```bash
+   sudo mkdir /mnt/backups && sudo mount /dev/sdb1 /mnt/backups
+   ```
+
+4. Verify the mount:
+
+   ```bash
+   df -h
+   ```
+
+5. Unmount the drive if needed:
+
+   ```bash
+   sudo umount /dev/sdb1
+   ```
+
+   or
+
+   ```bash
+   sudo umount /mnt/backups
+   ```
+
+6. For advanced mounting options, use:
+
+   ```bash
+   mount -o [options] [device] [mountfolder]
+   ```
+
+   Common options include:
+   - `ro`: Read-only
+   - `rw`: (default) Read and write
+   - `noexec`: Disable execution permissions
+   - `nosuid`: Disable set-user-identifier and set-group-identifier
+   - `noatime`: Do not update access time when a file is read
+
+7. To make the mount persistent across reboots, edit `/etc/fstab`. This ensures the volume is automatically mounted during system boot:
+
+   - **Note**: Data in the mounted folder is not lost if this step is skipped; however, manual re-mounting will be required after each reboot.
