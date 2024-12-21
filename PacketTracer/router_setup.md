@@ -1,4 +1,4 @@
-# Routing Setup
+# Router Setup
 
 This section refers to the network diagram shown below:
 
@@ -42,51 +42,38 @@ Refer to the following diagram for visual representation:
 Configure PCs within the network to ensure seamless communication and functionality. Refer the diagram for the IP addresses.
 
 1. **Access PC1**: 
-   - Click on **PC1** in Packet Tracer.
 2. **Open Configuration**: 
-   - Navigate to the **Config** tab.  
 3. **Select Interface**: 
-   - Choose **FastEthernet0** from the list of interfaces.  
+   - Choose **FastEthernet0**.  
 4. **Assign IPv4 Address**:  
-   - Enter the **IPv4 Address**: `192.168.10.10`.  
-   - The **Subnet Mask** will be automatically filled by pressing **Tab**.  
+   - **IPv4 Address**: `192.168.10.10`.  
+   - **Subnet Mask** will be automatically filled.  
 5. **Configure Default Gateway**:  
    - Navigate to **Settings** in the global options.  
-   - Enter the **Default Gateway**: `192.168.10.1`.  
-6. **Repeat for PC2**:  
-   - Follow steps 1–5 for **PC2**.  
-   - Ensure the **Default Gateway** for PC2 is correctly updated as required.
+   - **Default Gateway**: `192.168.10.1`.  
+6. **Repeat for PC2** with `192.168.30.1` as the **Default Gateway**.  
 
 ## Configuring Routers
 
 Configure the router for network functionality.
 
-1. **Access the Router**: 
-   - Click on the CA router in Packet Tracer. 
-2. **Open CLI Tab**: 
-   - Navigate to the **CLI** tab for command-line configuration.  
+1. **Access the CA Router**: 
+2. **Open CLI**: 
 3. **Exit Initial Setup**: 
-   - If prompted to enter the initial configuration dialog, type `no` and press **Enter**.  
+   - If prompted to enter the initial configuration dialog, type `no`.  
 4. **Enter Privileged EXEC Mode**: 
-   - Type `enable` and press **Enter**.
+   - `enable` 
 5. **Enter Configuration Mode**:
-   - Type `configure terminal` and press **Enter**.
+   - `configure terminal` 
 6. **Change Hostname of Router**:
-   - Type `hostname CA` and press **Enter**.
+   - `hostname CA`
 7. **Change interface**:
-   - Type `interface g0/1` and press **Enter**.
+   - `interface g0/1`
 8. **Change IP address in the g0/1 interface**:
-   - Type `
-
-
-
-
-
-
-
-
-
-
-
-
-
+   - `ip address 192.168.10.1 255.255.255.0`
+9. **Turn on router**: 
+   - `no shutdown`
+10. **Configure Additional Interfaces**:
+   - Repeat steps 7-9 for `g0/0`.
+11. **Configure NY Router**:
+   - Repeat steps 1-10, make adjustments to IP addresses, and hostnames.
