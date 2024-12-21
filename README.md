@@ -17,7 +17,7 @@
 ___
 
 
-# Networking (Packet Tracer, Wireshark...) 
+# Networking (Packet Tracer...) 
   - ## [Simple Network Simulation Using Packet Tracer](PacketTracer/PacketTracer.md)
     - This homelab showcases my expertise in configuring and managing network routers and protocols within a simulated environment. 
       - **Router Configuration**: Setting up basic network topology and configuring routers. 
@@ -29,5 +29,5 @@ ___
 
 ___
 
-## Security
+## Security 
   - Placeholder
