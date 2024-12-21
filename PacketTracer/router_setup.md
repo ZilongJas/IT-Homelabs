@@ -58,7 +58,11 @@ Configure the router for network functionality.
     - `ip address 192.168.10.1 255.255.255.0`
 8. **Turn on router**: 
     - `no shutdown`
-9. **Configure Additional Interfaces**:
-    - Repeat steps 6-8 for `g0/0`.
-10. **Configure NY Router**:
-    - Repeat steps 1-9, make adjustments to IP addresses, and hostnames as mentioned above in the Configuring PCs section.
+9. **Exit `g0/1` interface, switch to `g0/0` interface**
+10. **Change IP address in the g0/0 interface**: 
+    - `ip address 192.168.20.1 255.255.255.0`
+11. **Turn on router**
+12. **Configure NY Router**:
+    - Repeat steps 1-9
+    - Interface `g0/1` ip address: `192.168.30.1`
+    - Interface `g0/0` ip address: `192.168.20.2`
