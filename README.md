@@ -9,8 +9,8 @@ Tools used:
 
 ___
 
-## Networking 
-  - [Cisco Packet Tracer](PacketTracer/PacketTracer.md)
+## Cisco Packet Tracer 
+  - [Network Setup](PacketTracer/PacketTracer.md)
 
 
 Tools used:
