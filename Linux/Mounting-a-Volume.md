@@ -1,6 +1,4 @@
-# Mounting a Volume in Linux
-
-## Steps
+# Mounting the Volume
 
 1. **Identify the Drive**:  
    List available block devices to find the drive to be mounted:
@@ -67,4 +65,4 @@
    - `noatime`: Prevent updating access times
 
 7. **Make Persistent**:  
-   To retain the mount after a reboot, add an entry to `/etc/fstab`. Example:
+   To retain the mount after a reboot, add an entry to `/etc/fstab`
