@@ -1,4 +1,4 @@
-## System Adminstration (Ubuntu, Rocky Linux, VM...)
+# System Adminstration (Ubuntu, Rocky Linux, VM...)
 
 - ## [Linux System Adminstration Homelab](Linux/Linux.md)
   - This homelab showcases my expertise in Linux system administration across the following areas:
@@ -16,7 +16,8 @@
 
 ___
 
-## Networking (Packet Tracer, Wireshark...) 
+
+# Networking (Packet Tracer, Wireshark...) 
   - ## [Simple Network Simulation Using Packet Tracer](PacketTracer/PacketTracer.md)
     - This homelab showcases my expertise in configuring and managing network routers and protocols within a simulated environment. 
       - **Router Configuration**: Setting up physical connections and configuring routers for optimal network performance.  
