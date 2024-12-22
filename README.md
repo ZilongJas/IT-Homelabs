@@ -1,5 +1,6 @@
 - ## [Linux System Adminstration Homelab](Linux/Linux.md)
-  - This homelab showcases my expertise in Linux system administration across the following areas:
+  - This homelab showcases my Linux administration skills, covering virtualization, disk and user management, networking, security, automation, monitoring, and system updates.
+
     - **Virtualization**: Managing environments with VirtualBox.
     - **Disk Management**: Partitioning, LVM, and mounting storage.
     - **User Management**: Configuring users, groups, and permissions.
@@ -11,11 +12,12 @@
     - **Backup**: -
     - **Patch Management**: Updating packages and applying kernel patches.
 
-___
+---
 
 
-  - ## [Router & Routing Setups Simulation Using Packet Tracer](RoutingPT/README.md)
-    - This homelab showcases my expertise in configuring and managing network routers and protocols within a simulated environment. 
+  - ## [Dynamic Routing and Network Configuration Homelab](RoutingPT/README.md)
+    - This homelab showcases my expertise in configuring and managing network routers and protocols within a simulated environment in packet tracer.
+
       - **Router Configuration**: Setting up basic network topology and configuring routers. 
       - **Static Routing**: Implementing static routes to ensure direct communication between networks.  
       - **RIP**: Setting up and managing RIP for basic dynamic routing.  
