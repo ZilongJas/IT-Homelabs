@@ -32,7 +32,7 @@ NY LAN: 192.168.30.0/24
 1. CA Router
   - `enable`: Privileged EXEC Mode
   - `conf t`: Configuration Mode
-  - `router rip`: Enable RIP
+  - `router rip`: Enable RIP on router
   - `version 2`: use RIP v2
   - `network 192.168.10.0`: adds the 192.168.10.0/24 network in RIP routing process
   - `network 192.168.20.0`: adds the 192.168.20.0/24 network in RIP routing process
