@@ -1,4 +1,4 @@
-# Router & Routing Setups Documentation
+# Small Sized Network
 
 Configuring and managing network routers and protocols in a simulated environment.
 
