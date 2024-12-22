@@ -22,8 +22,3 @@ ___
       - **OSPF**: Configuring OSPF for scalable and efficient dynamic routing.  
       - **EIGRP**: Implementing EIGRP for advanced and optimized routing within complex networks.
 
-___
-
-
-## Security 
-  - Placeholder
