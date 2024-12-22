@@ -27,4 +27,14 @@ NY LAN: 192.168.30.0/24
 
 ![image](https://github.com/user-attachments/assets/b6c749c7-7f62-43b2-a187-62d4a357d100)
 
-## 
+## Configuring CA and NY Routers using the static route method
+
+1. CA Router
+  - `enable`: Privileged EXEC Mode
+  - `conf t`: Configuration Mode
+  - `ip route 192.168.30.0 255.255.255.0 192.168.20.2`: Setup manual routing
+2. NY Router
+  - `enable`: Privileged EXEC Mode
+  - `conf t`: Configuration Mode
+  - `ip route 192.168.10.0 255.255.255.0 192.168.20.1`: Setup manual routing
+
