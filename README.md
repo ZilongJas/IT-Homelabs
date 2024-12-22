@@ -14,7 +14,7 @@
 ___
 
 
-  - ## [Router & Routing Setups Simulation Using Packet Tracer](PacketTracer/PacketTracer.md)
+  - ## [Router & Routing Setups Simulation Using Packet Tracer](RoutingPT/README.md)
     - This homelab showcases my expertise in configuring and managing network routers and protocols within a simulated environment. 
       - **Router Configuration**: Setting up basic network topology and configuring routers. 
       - **Static Routing**: Implementing static routes to ensure direct communication between networks.  
