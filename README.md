@@ -1,5 +1,3 @@
-# System Adminstration (Ubuntu, Rocky Linux, VM...)
-
 - ## [Linux System Adminstration Homelab](Linux/Linux.md)
   - This homelab showcases my expertise in Linux system administration across the following areas:
     - **Virtualization**: Managing environments with VirtualBox.
@@ -13,11 +11,9 @@
     - **Backup**: -
     - **Patch Management**: Updating packages and applying kernel patches.
 
-
 ___
 
 
-# Networking (Packet Tracer...) 
   - ## [Simple Network Simulation Using Packet Tracer](PacketTracer/PacketTracer.md)
     - This homelab showcases my expertise in configuring and managing network routers and protocols within a simulated environment. 
       - **Router Configuration**: Setting up basic network topology and configuring routers. 
@@ -26,8 +22,8 @@ ___
       - **OSPF**: Configuring OSPF for scalable and efficient dynamic routing.  
       - **EIGRP**: Implementing EIGRP for advanced and optimized routing within complex networks.
 
-
 ___
+
 
 ## Security 
   - Placeholder
