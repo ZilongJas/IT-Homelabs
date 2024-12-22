@@ -40,7 +40,7 @@ NY LAN: 192.168.30.0/24
   - `network 192.168.20.0`
   - `network 192.168.30.0`
 
-## Troubleshooting: 
+## Troubleshooting
 
 1. Wrong AS Number
   - `no router eigrp #`: Delete configuration
