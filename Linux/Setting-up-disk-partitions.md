@@ -1,41 +1,13 @@
-# Setting Up Disk Partitions in Linux
+# Setting Up Disk Partitions in Linux using `parted`
 
-## Objective
-This document provides a procedural reference for adding, formatting, and mounting a new virtual disk in Linux systems.
-
----
-
-## Steps
-
-### 1. Adding a Virtual Disk
-
-1. Ensure the virtual machine has been run at least once and is in a powered-off state before proceeding.
-   - **Note**: Attempting this process while the VM is running may result in errors or unexpected behavior.
-
-   ![Shutdown State](../images/shutdownstate.png)
-
-2. Access the `Settings` menu of the virtual machine.
-3. Navigate to `Storage` and select the small icon under the chosen controller to add a new virtual disk.
-
-   ![Add Disk](../images/storage_SS.png)
-
-4. Highlight the virtual machine and click `Create`. Select `Expert Mode` if `Guided Mode` is active.
-
-   ![Create Disk](../images/create.png)
-
-5. Define a virtual disk size of **64GB** to simulate adding a new hard drive.
-
-   ![Disk Creation](../images/diskcreation.png)
-
-6. Finalize by clicking `Finish`, attach the newly created disk, and confirm it is successfully added to the virtual machine.
-
-   ![Add Success](../images/add_success.png)
+#### Virtual disk added to Oracle VM: `/dev/sdb`
+#### Main disk: `/dev/sda`
 
 ---
 
-### 2. Formatting and Partitioning the Disk
+### Formatting and Partitioning the Disk
 
-1. Start the virtual machine and open a terminal.
+1. Start `parted` in terminal.
 
    ```bash
    sudo parted
