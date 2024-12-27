@@ -1,4 +1,4 @@
-- ## [Linux System Adminstration Homelab](Linux/README.md) 
+- ## [Linux System Adminstration Homelab](Linux/README.md) (In-PROGRESS)
   - Simulated a real-world Linux system administration environment. *(More details inside)*
 
 ---
