@@ -66,3 +66,5 @@
 
 7. **Make Persistent**:  
    To retain the mount after a reboot, add an entry to `/etc/fstab`
+
+   in-progress
