@@ -1,5 +1,5 @@
 - ## [Linux System Adminstration Homelab](Linux/README.md) (In-PROGRESS)
-  - Simulated a real-world Linux system administration environment. *(More details inside)*
+  - Simulate a real-world Linux system administration environment. *(More details inside)*
 
 ---
 
@@ -9,7 +9,7 @@
 ---
 
 - ## [Home Network Security and Optimization Overhaul](Home/README.md) (IN-PROGRESS, should be done before 2025)
-  - Implemented dual access points, QoS optimization, and segregated IoT and guest networks for improved wireless performance and security. *(More details inside)*
+  - Implement dual access points, QoS optimization, and segregate IoT and guest networks for improved wireless performance and security. *(More details inside)*
 
 ---
 
