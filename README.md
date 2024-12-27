@@ -8,7 +8,7 @@
    
 ---
 
-- ## [Home Network Security and Optimization Overhaul](Home/README.md) (IN-PROGRESS, should be done before 2025)
+- ## [Home Network Security and Optimization Overhaul](Home/README.md) (IN-PROGRESS, will be done before 2025)
   - Implement dual access points, QoS optimization, and segregate IoT and guest networks for improved wireless performance and security. *(More details inside)*
 
 ---
