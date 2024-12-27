@@ -9,7 +9,7 @@ This homelab covers configuring and managing network routers and protocols withi
   - **EIGRP**: Implementing EIGRP for advanced and optimized routing within complex networks.
 
 
-1. [Router Setup](router_setup.md)
+1. [Router Configuration](router_setup.md)
 2. [Static Routing](static_routes.md)
 3. [RIP Routing](rip_routes.md)
 4. [OSPF Routing](ospf_routes.md)
