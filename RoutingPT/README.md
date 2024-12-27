@@ -1,12 +1,12 @@
 # Small Network Setup Homelab Summary:
 
-This homelab covers configuring and managing network routers and protocols within a simulated environment in packet tracer.
+Configured network routers and protocols within a simulated environment in packet tracer
 
-  - **Router Configuration**: Setting up basic network topology and configuring routers. 
-  - **Static Routing**: Implementing static routes to ensure direct communication between networks.  
-  - **RIP**: Setting up and managing RIP for basic dynamic routing.  
-  - **OSPF**: Configuring OSPF for scalable and efficient dynamic routing.  
-  - **EIGRP**: Implementing EIGRP for advanced and optimized routing within complex networks.
+  - **Router Configuration**: Set up basic network topology and configured routers. 
+  - **Static Routing**: Implemented static routes.
+  - **RIP**: Implemented RIP dynamic routing.
+  - **OSPF**: Configured OSPF for efficient dynamic routing. 
+  - **EIGRP**: Implemented EIGRP for advanced hybrid routing. 
 
 
 1. [Router Configuration](router_setup.md)
